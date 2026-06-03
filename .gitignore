@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Raw/processed data are not committed by default.
+# AI Hub data and student responses may be subject to redistribution restrictions.
+data/raw/archives/*.zip
+data/raw/extracted/
+data/processed/*.csv
+data/processed/*.parquet
+results/llm_scores/*.jsonl
+results/llm_scores/*.csv
+results/tables/*.csv
+results/figures/*.png
+
+# Large local bundles
+*_local_with_raw.zip
+*.log
+.DS_Store
+
+
+data/raw/
+data/interim/
+data/processed/
+*.zip
+*.xlsx
+*.csv
+*.json
+!metadata/*.csv
