@@ -84,8 +84,8 @@ data/raw/archives/
 └── 중3(2).zip
 ```
 
-> 주의: `data/raw/archives/*.zip`은 `.gitignore`에 의해 Git에 올라가지 않도록 설정되어 있습니다. 학생 응답 원문과 AI Hub 원자료는 원 제공기관의 이용약관과 라이선스를 먼저 확인한 뒤 공개 여부를 결정하세요.
-
+> 주의: `data/raw/archives/*.zip`은 `.gitignore`에 의해 Git에 올라가지 않도록 설정되어 있습니다. 학생 응답 원문과 AI Hub 원자료는 원 제공기관의 이용약관과 라이선스로 인해 해당 repository에 저장되어있지 않습니다.
+> aihub에서 다운로드 받으세요.
 원자료가 제대로 들어갔는지 확인합니다.
 
 ```bash
@@ -214,5 +214,33 @@ PYTHONPATH=src pytest -q
 
 ## 11. 라이선스
 
-- 코드 및 본 저장소 문서: MIT License
 - AI Hub 원자료, 학생 답안, 루브릭, 제3자 자료: 원 제공기관의 라이선스와 이용약관 적용
+
+
+
+## Data Availability and License Notice
+
+This repository provides code and documentation for reproducing the analyses reported in the paper.
+
+The original student writing data used in this study were obtained from the AI Hub Korean writing assessment dataset. Due to AI Hub’s data-use terms and redistribution restrictions, the raw data files are **not included** in this repository.
+
+Researchers who wish to reproduce the analysis should obtain the dataset directly from AI Hub after agreeing to the applicable terms of use, and then place the downloaded files in the following directory:
+
+```text
+data/raw/archives/
+```
+
+Expected raw data archive structure:
+
+```text
+data/raw/archives/
+├── 초5.zip
+├── 초6 전체.zip
+├── 중1.zip
+└── 중3.zip
+```
+
+The scripts in this repository assume that the raw AI Hub data are provided locally by the user. The repository does not redistribute, sublicense, or publicly share any original AI Hub data, student responses, or derived files that may contain student-written text.
+
+Only analysis code, configuration files, documentation, and non-identifiable summary outputs are intended to be shared through this repository.
+
