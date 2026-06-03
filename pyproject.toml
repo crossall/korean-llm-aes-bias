@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "korean-llm-aes"
+version = "0.1.0"
+description = "Repository for Korean LLM-based automated essay scoring bias analysis across grades."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Taeryeong Kim"}]
+license = {text = "MIT for code; data subject to original provider license"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

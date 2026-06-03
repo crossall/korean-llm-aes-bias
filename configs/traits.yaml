@@ -1,0 +1,27 @@
+holistic:
+  scale: [1, 4]
+analytic:
+  task_1:
+    scale: [1, 5]
+    label_ko: 과제 수행의 충실성
+  content_1:
+    scale: [1, 5]
+    label_ko: 내용 1
+  content_2:
+    scale: [1, 5]
+    label_ko: 내용 2
+  content_3:
+    scale: [1, 5]
+    label_ko: 내용 3
+  organization_1:
+    scale: [1, 5]
+    label_ko: 조직 1
+  organization_2:
+    scale: [1, 5]
+    label_ko: 조직 2
+  expression_1:
+    scale: [1, 5]
+    label_ko: 표현 1
+  expression_2:
+    scale: [1, 5]
+    label_ko: 표현 2
